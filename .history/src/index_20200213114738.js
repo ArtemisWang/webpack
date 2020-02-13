@@ -11,4 +11,3 @@ console.log(sum(10,20))
 
 import obj1 from './c'
 console.log(obj1)
-console.log(100)
