@@ -57,6 +57,3 @@ function debounce(fn, delay=500){
     }
 }
 
-input1.addEventListener('keyup', debounce(()=>{
-    console.log(input1.value)
-}), 500)

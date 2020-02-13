@@ -51,7 +51,9 @@ function debounce(fn, delay=500){
             clearTimeout(timer)
         }
         timer=setTimeout(()=>{
-            fn.apply(this,arguments)
+            // fn.apply(this,arguments)
+            fn()
+            // console.log(`this:${this.value}`)
             timer=null
         }, delay)
     }

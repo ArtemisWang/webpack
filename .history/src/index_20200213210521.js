@@ -52,11 +52,12 @@ function debounce(fn, delay=500){
         }
         timer=setTimeout(()=>{
             fn.apply(this,arguments)
+            console.log(`this:${this.value}`)
             timer=null
         }, delay)
     }
 }
 
 input1.addEventListener('keyup', debounce(()=>{
-    console.log(input1.value)
+    console.log(this)
 }), 500)
