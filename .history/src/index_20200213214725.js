@@ -83,7 +83,8 @@ function throttle(fn, delay=100){
             return 
         }
         timer=setTimeout(()=>{
-            fn.apply(this,arguments) //主要用于传递arguments参数
+            // fn.apply(this,arguments)
+            fn(arguments)
             timer=null
         },delay)
     }
