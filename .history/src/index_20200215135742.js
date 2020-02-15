@@ -117,7 +117,6 @@ function isEqual(obj1, obj2){
             return false
         }
     }
-    // 上面的递归结果都是true，则返回true
     return true
 }
 

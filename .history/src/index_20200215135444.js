@@ -106,18 +106,16 @@ function isEqual(obj1, obj2){
     if(obj1===obj2){
         return true
     }
-    // 3. 比较两个对象的keys长度是否一样，不同则返回false
+    // 3. 比较两个对象的keys长度是否一样，不同则返回
     if(Object.keys(obj1).length!==Object.keys(obj2).length){
         return false
     }
-    // 4. 对obj中的每个key对应的值递归，有为false的情况直接返回false
     for(let key in obj1){
         const res= isEqual(obj1[key],obj2[key])
         if(!res){
             return false
         }
     }
-    // 上面的递归结果都是true，则返回true
     return true
 }
 
