@@ -177,39 +177,4 @@
 
 // console.log(obj1, obj2)
 
-// let i
-// for(i=1;i<=3;i++){
-//     setTimeout(()=>{
-//         console.log(i)
-//     },0)
-// }
-
-// // 邮政编码，6个数字
-// let reg=/\d{6}/
-// // 小写英文字母
-// reg=/^[a-z]+$/
-// // 英文字母
-// reg=/^[a-zA-Z]+$/
-// // 日期格式 1999-1-22
-// reg=/^\d{4}-\d{1,2}-\d{1,2}$/
-// // 用户名 6-18位
-// reg=/^[a-zA-Z]\w{5,17}$/
-// // 简单的IP地址匹配
-// reg=/\d+\.\d+\.\d+\.\d+/
-
-// function max(){
-//     console.log(arguments)
-//     // console.log(arguments.slice())
-// }
-
-// max(10,20,30,40)
-
-function ma(name){
-    let str='?puma=10&a=10&b=20&c=30'
-    str=str.slice(1)
-    const reg1=new RegExp(`^(.*)(^|&)${name}=`,'i')
-    console.log(str.replace(reg1,''))
-    const reg2=new RegExp('&.*','i')
-    console.log(str.replace(reg1,'').replace(reg2,''))
-}
-ma('a')
+let i

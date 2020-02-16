@@ -209,7 +209,7 @@ function ma(name){
     str=str.slice(1)
     const reg1=new RegExp(`^(.*)(^|&)${name}=`,'i')
     console.log(str.replace(reg1,''))
-    const reg2=new RegExp('&.*','i')
-    console.log(str.replace(reg1,'').replace(reg2,''))
+    // const reg2=new RegExp('&.*','i')
+    // console.log(str.replace(reg1,'').replace(reg2,''))
 }
 ma('a')

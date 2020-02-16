@@ -204,12 +204,6 @@
 
 // max(10,20,30,40)
 
-function ma(name){
-    let str='?puma=10&a=10&b=20&c=30'
-    str=str.slice(1)
-    const reg1=new RegExp(`^(.*)(^|&)${name}=`,'i')
-    console.log(str.replace(reg1,''))
-    const reg2=new RegExp('&.*','i')
-    console.log(str.replace(reg1,'').replace(reg2,''))
-}
-ma('a')
+let str='?a=10&b=20&c=30'
+
+console.log(str.slice(1))

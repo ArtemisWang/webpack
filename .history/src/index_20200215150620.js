@@ -139,77 +139,9 @@
 // console.log(obj2['b'])
 
 // 数组的纯函数
-// const arr=[10,20,30,40]
-// const arr1=arr.concat([50,60,70])
-// const arr2=arr.map(num=>num*10)
-// const arr3=arr.filter(num=>num<30)
-// const arr4=arr.slice(1)// 截取数组，深拷贝
-// arr.splice(1, 1)
-// console.log(arr, arr1, arr2, arr3, arr4)
-
-// 非纯函数
-// push pop shift unshift
-// forEach
-// some every
-// reduce
-
-// let arr=[1,2,3,4]
-// arr.reduce((p,n)=>{n=10+p; return n})
-// console.log(arr)
-
-// const obj1={
-//     a:10,
-//     b:20,
-//     sum(){
-//         return this.a+this.body
-//     }
-// }
-
-// const obj2= new Object({
-//     a:10,
-//     b:20,
-//     sum(){
-//         return this.a+this.body
-//     }
-// })
-
-// const obj2= new Object(obj1)
-
-// console.log(obj1, obj2)
-
-// let i
-// for(i=1;i<=3;i++){
-//     setTimeout(()=>{
-//         console.log(i)
-//     },0)
-// }
-
-// // 邮政编码，6个数字
-// let reg=/\d{6}/
-// // 小写英文字母
-// reg=/^[a-z]+$/
-// // 英文字母
-// reg=/^[a-zA-Z]+$/
-// // 日期格式 1999-1-22
-// reg=/^\d{4}-\d{1,2}-\d{1,2}$/
-// // 用户名 6-18位
-// reg=/^[a-zA-Z]\w{5,17}$/
-// // 简单的IP地址匹配
-// reg=/\d+\.\d+\.\d+\.\d+/
-
-// function max(){
-//     console.log(arguments)
-//     // console.log(arguments.slice())
-// }
-
-// max(10,20,30,40)
-
-function ma(name){
-    let str='?puma=10&a=10&b=20&c=30'
-    str=str.slice(1)
-    const reg1=new RegExp(`^(.*)(^|&)${name}=`,'i')
-    console.log(str.replace(reg1,''))
-    const reg2=new RegExp('&.*','i')
-    console.log(str.replace(reg1,'').replace(reg2,''))
-}
-ma('a')
+const arr=[10,20,30,40]
+const arr1=arr.concat([50,60,70])
+const arr2=arr.map(num=>num*10)
+const arr3=arr.filter(num=>num<30)
+const arr4=arr.slice()
+console.log(arr, arr1, arr2, arr3, arr4)
