@@ -1,0 +1,14 @@
+{
+    "presets": [
+        "env"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            },
+            "transform-async-to-generator"
+        ]
+    ]
+}
