@@ -1,5 +1,0 @@
-let hash=new Map()
-hash.set('key1','value1')
-hash.set('key1','value2')
-hash.set('key3','value3')
-console.log(hash)
